@@ -348,15 +348,19 @@ if ($posts_query) {
         <i class="fas fa-bullhorn"></i>
         <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
             <?php 
-            if (!empty($posts_data)) {
-                $marquee_text = [];
-                foreach ($posts_data as $post) {
-                    $marquee_text[] = "🔹 " . htmlspecialchars($post['title']);
-                }
-                echo implode(" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ", $marquee_text);
-            } else {
-                echo "សូមស្វាគមន៍មកកាន់ប្រព័ន្ធគ្រប់គ្រងបណ្ណាល័យ នៃវិទ្យាស្ថានបច្ចេកវិទ្យាកំពង់ឈើទាល!";
-            }
+                echo (" &nbsp;សូមស្វាគមន៍មកកាន់បណ្ណាល័យ នៃវិទ្យាស្ថានបច្ចេកវិទ្យាកំពង់ឈើទាល! 📣 ត្រៀមខ្លួនសម្រាប់អនាគតដ៏ភ្លឺស្វាង! ក្លាយជាអ្នកជំនាញបច្ចេកទេសដែលកំពុងពេញនិយមនៅលើទីផ្សារការងារ ជាមួយវិទ្យាស្ថានបច្ចេកវិទ្យាកំពង់ឈើទាល!
+តើប្អូនៗ កំពុងស្វែងរកការសិក្សាជំនាញពិតប្រាកដដែលធានាឱកាសការងារមែនទេ?
+🎓 ជ្រើសរើសសិក្សាលើជំនាញដែលវិទ្យាស្ថានបើកបណ្តុះបណ្តាល ទាំងថ្នាក់ បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ ដូចជា ៖⚡ អនុភាពអគ្គិសនី 🐄 វិទ្យាសាស្ត្រសត្វ🌾 វិទ្យាសាស្ត្រដំណាំ 🏨 គ្រប់គ្រងទេសចរណ៍ និងសណ្ឋាគារ 💻 កុំព្យូទ័រពាណិជ្ជកម្ម និងជំនាញ 🔧 អេឡិចត្រូនិច
+✨ អ្វីដែលប្អូននឹងទទួលបាន៖
+👉 ជំនាញវិជ្ជាជីវៈច្បាស់លាស់៖ សិក្សាពីគ្រូបង្រៀនមានបទពិសោធន៍។
+👉 ការសិក្សាផ្សារភ្ជាប់នឹងការងារ៖ អនុវត្តផ្ទាល់ដើម្បីពង្រឹងចំណេះដឹង។
+👉 ការច្នៃប្រឌិត និងដំណោះស្រាយបញ្ហា៖ បណ្តុះគំនិតថ្មីៗស្របតាមយុគសម័យបច្ចេកវិទ្យា។
+👉  ឱកាសការងារធំទូលាយ៖ មានលទ្ធភាពទទួលបានការងារភ្លាមៗ ជាមួយដៃគូររបស់វិទ្យាស្ថាន ក្រោយបញ្ចប់ការសិក្សា ។
+កុំបង្អង់យូរ! ឆ្ពោះទៅកាន់ភាពជោគជ័យជាមួយជំនាញច្បាស់លាស់។
+📍 ព័ត៌មានលម្អិតទំនាក់ទំនង៖ ការិយាល័យសិក្សា និងកិច្ចការសិស្សនិស្សិត
+Telegram: https://t.me/+vkk0_ZdOwv42ZTFl
+📞 0125 303 12 / 069 606 363 / 085 488 988 ");
+         
             ?>
         </marquee>
     </div>
@@ -369,7 +373,7 @@ if ($posts_query) {
         <ul class="nav-menu" id="nav-menu-list">
             <li class="nav-item active"><a href="home.php"><i class="fas fa-home"></i> Home</a></li>
             <li class="nav-item"><a href="catalog.php"><i class="fas fa-book"></i> Books In Library</a></li>
-            <li class="nav-item"><a href="member/login.php"><i class="fas fa-sign-in-alt"></i> Sign In (Admin)</a></li>
+            <li class="nav-item"><a href="member/login.php"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
         </ul>
 
         <div class="nav-right-tools">
